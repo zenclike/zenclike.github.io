@@ -1,0 +1,10 @@
+body, button {
+  font-family: "Ubuntu";
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
