@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen Language Reference</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background: #002b55cc;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      backdrop-filter: blur(5px);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: #002b55;
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      background: #002b5520;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+      line-height: 1.6rem;
+    }
+
+    pre {
+      background: #002b5515;
+      padding: 1rem;
+      border-left: 5px solid #002b55;
+      overflow-x: auto;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background: #002b5510;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Zen Programming Language</h1>
+    <p>A minimal, C-inspired procedural language with concise syntax</p>
+  </header>
+  <main>
+    <section>
+      <h2>Introduction</h2>
+      <p><strong>Zen</strong> is a procedural language based on C with simplified and shortened commands. It uses functional and conditional (statement) expressions.</p>
+    </section>
+
+    <section>
+      <h2>Command Types</h2>
+      <ul>
+        <li><strong>Function:</strong> Executes an action (e.g., <code>printw "Hello";</code>)</li>
+        <li><strong>Statement:</strong> Evaluates a condition (e.g., <code>streq "a", "b";</code>)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Core Syntax</h2>
+      <pre><code>deflib "str";
+defstr "a";
+str "a", "hello";
+printr "a";</code></pre>
+    </section>
+
+    <section>
+      <h2>Command Reference</h2>
+      <h3>Core Commands</h3>
+      <table>
+        <tr><th>Command</th><th>Meaning</th></tr>
+        <tr><td>deflib</td><td>Define a library</td></tr>
+        <tr><td>func</td><td>Define a function</td></tr>
+        <tr><td>end</td><td>End a block</td></tr>
+        <tr><td>run</td><td>Run function with iterations</td></tr>
+      </table>
+
+      <h3>IO Commands</h3>
+      <table>
+        <tr><th>Command</th><th>Description</th></tr>
+        <tr><td>printw</td><td>Print string literal</td></tr>
+        <tr><td>printr</td><td>Print string variable</td></tr>
+        <tr><td>printd</td><td>Print integer variable</td></tr>
+        <tr><td>txt</td><td>Read text file</td></tr>
+      </table>
+
+      <h3>String Commands</h3>
+      <table>
+        <tr><th>Command</th><th>Description</th></tr>
+        <tr><td>defstr</td><td>Define string variable</td></tr>
+        <tr><td>str</td><td>Set string content</td></tr>
+        <tr><td>streq</td><td>Compare equality</td></tr>
+        <tr><td>strlen</td><td>Get string length</td></tr>
+      </table>
+
+      <h3>Integer Commands</h3>
+      <table>
+        <tr><th>Command</th><th>Description</th></tr>
+        <tr><td>defint</td><td>Define integer</td></tr>
+        <tr><td>int</td><td>Set integer</td></tr>
+        <tr><td>add</td><td>Add value</td></tr>
+        <tr><td>rand</td><td>Random number</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Formatting</h2>
+      <p>Use <code>^</code> to insert variable references inside other commands.</p>
+      <pre><code>str "a", "z";
+str "b", "^a";
+add "num", "a";</code></pre>
+    </section>
+  </main>
+</body>
+</html>
