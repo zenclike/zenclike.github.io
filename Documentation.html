@@ -68,6 +68,7 @@
       background: #002b5510;
     }
   </style>
+  <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
   <header>
@@ -90,10 +91,10 @@
 
     <section>
       <h2>Core Syntax</h2>
-      <pre><code>deflib "str";
-defstr "a";
-str "a", "hello";
-printr "a";</code></pre>
+      <pre><p><span style="color: #43a6bf;">deflib</span> <span style="color: #629c70;">"str"</span>;
+<span style="color: #43a6bf;">defstr</span> <span style="color: #629c70;">"a"</span>;
+<span style="color: #b3af7d;">str</span> <span style="color: #629c70;">"a"</span>, <span style="color: #629c70;">"hello"</span>;
+<span style="color: #b3af7d;">printr</span> <span style="color: #629c70;">"a"</span>;</p></pre>
     </section>
 
     <section>
@@ -138,9 +139,9 @@ printr "a";</code></pre>
     <section>
       <h2>Formatting</h2>
       <p>Use <code>^</code> to insert variable references inside other commands.</p>
-      <pre><code>str "a", "z";
-str "b", "^a";
-add "num", "a";</code></pre>
+      <pre><p><span style="color: #b3af7d;">str</span> <span style="color: #629c70;">"a"</span>, <span style="color: #629c70;">"z"</span>;
+<span style="color: #b3af7d;">str</span> <span style="color: #629c70;">"b"</span>, <span style="color: #629c70">"^a"</span>;
+<span style="color: #b3af7d;">add</span> <span style="color: #629c70;">"d"</span>, <span style="color: #629c70">"c"</span>;</p></pre>
     </section>
   </main>
 </body>

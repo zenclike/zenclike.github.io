@@ -1,51 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zen</title>
+    <title>Zen Language</title>
     <link rel="stylesheet" href="src/styles.css">
-    <script>
-      const version = "006";
-    </script>
   </head>
-  <body style="background-color: rgb(0, 25, 50); color: rgb(255, 255, 255);">
-    <img style="display: block; margin: auto; width: 128px;" src="img/Zen.png">
-    <h1 style="text-align: center;">Z E N</h1>
-    <p style="text-align: center;"><i>"<b><i>C</i></b> like, <b>fast</b> and <b>open-source</b>."</i>&nbsp; - Zenic</p>
-    <p style="text-align: center;">A <b>procedural programming language</b> that is <b>compiled</b>.</p>
-    <p style="text-align: center;">If you want to know more about <b><i>Zen</i></b> language,</p>
-    <p style="text-align: center;">you can join our <b>Discord server</b> to access to all <b>tutorials</b>.</p>
-    <p style="text-align: center;">Also you will able to join the <b><i>Zen</i></b> Jam 2025.</p>
-    <h2 style="text-align: center;">Zen Jam 2025</h2>
-    <img style="display: block; margin: auto; width: 128px;" src="img/Zen-Jam.png">
-    <p style="text-align: center;">Days Left :</p>
-    <p id="left" style="text-align: center;">&nbsp;</p>
-    <button tabIndex="-1" style="display: block; margin: 0 auto; width: 160px; height: 32px; border: 2px solid rgb(255, 255, 255); border-radius: 4px;
-            background-color: rgb(25, 50, 75); color: rgb(255, 255, 255); cursor: pointer;"
-      onclick='window.location.href = `https://www.github.com/zenclike/Zen`'><b>Get</b></button>
-    <br>
-    <button tabIndex="-1" style="display: block; margin: 0 auto; width: 160px; height: 32px; border: 2px solid rgb(255, 255, 255); border-radius: 4px;
-            background-color: rgb(25, 50, 75); color: rgb(255, 255, 255); cursor: pointer;"
-      onclick='window.location.href = "https://discord.gg/xSbHANr5TX"'><b>Join</b></button>
-    <br>
-    <button tabIndex="-1" style="display: block; margin: 0 auto; width: 160px; height: 32px; border: 2px solid rgb(255, 255, 255); border-radius: 4px;
-            background-color: rgb(25, 50, 75); color: rgb(255, 255, 255); cursor: pointer;"
-      onclick='window.location.href = "Documentation.html"'><b>Documentation</b>
-    </button>
+  <header>
+    <h1>Zen Programming Language</h1>
+    <p>A minimal, C-inspired procedural language with concise syntax</p>
+  </header>
+  <body>
+    <main>
+      <p>Zen is a procedural programming language made by the <b>Zen Team</b>.</p>
+      <p>Zen is like C but is more safer.</p>
+      <pre>
+        <p>; Hello World Program
+<span style="color: #43a6bf;">deflib</span> <span style="color: #629c70;">"io"</span>;
+<span style="color: #b3af7d;">printw</span> <span style="color: #629c70;">"Hello, World!\n"</span>;</p>
+      </pre>
+    </main>
+      <div id="links">
+        <button tabIndex="-1" onclick='window.location.href=`https://www.github.com/zenclike/Zen`'><b>Download Zen</b></button>
+        <button tabIndex="-1" onclick='window.location.href="https://discord.gg/xSbHANr5TX"'><b>Join Discord Server</b></button>
+        <button tabIndex="-1" onclick='window.location.href="Documentation.html"'><b>Read Documentation</b></button>
+      </div>
   </body>
-  <footer>
-    <p style="text-align: center;">Copyrighted (C) <b><i>Zenic</i></b> 2025</p>
-  </footer>
-  <script>
-    const jam_day = new Date(2025, 8, 10);
-    const left = document.querySelector("#left");
-    var interval = setInterval(() => {
-      const today = new Date();
-      const time = (Math.floor((jam_day.getTime() - today.getTime()) / 1000 / 86400 / 2));
-      if (time < 0) {
-        left.textContent = "E N D E D";
-      } else {
-        left.textContent = time.toString();
-      }
-    }, 0)
-  </script>
 </html>
