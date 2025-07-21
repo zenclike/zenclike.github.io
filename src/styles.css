@@ -1,10 +1,60 @@
 body, button {
-  font-family: "Ubuntu";
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
-@font-face {
-  font-family: "Ubuntu";
-  src: url("../fonts/Ubuntu-Regular.ttf");
+header {
+  background: #002b55cc;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+main {
+  padding: 2rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+button {
+  background: #002b5515;
+  border: 5px solid #002b55;
+  border-radius: 4px;
+  width: 176px;
+  height: 48px;
+  text-align: center;
+  display: block;
+  vertical-align: middle;
+}
+
+pre {
+  background: #002b5515;
+  padding: 2rem;
+  white-space: pre-line;
+  border-left: 5px solid #002b55;
+  overflow-x: auto;
+  font-family: monospace;
+  font-size: large;
+}
+
+pre p {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: ruby;
+  gap: 2px;
+  align-content: center;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
 }
